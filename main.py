@@ -29,16 +29,16 @@ def modify_string(text_string,modify_string,replacement_string):
 goal = modify_string("Gooooooooaaaaaalll!!!!!!!!!!!!!!!!!!!!!!!!!!!","!","@")
 print(goal)
 
-def clean_text(string,special_character,replacement_string):
-  cleaned_string = text_string
+def wash_string(text,text_a_modifier,text_de_remplacement):
+  text_a_nettoyer = text_string
 
-  for string in special_character:
-    cleaned_string = cleaned_string.replace(string,replacement_string)
-  cleaned_string = cleaned_string.lower()
-  return(cleaned_string) 
+  for texts in text_a_modifier:
+    text_a_nettoyer = text_a_nettoyer.replace(texts,text_de_remplacement)
+  text_a_nettoyer = text_a_nettoyer.lower()
+  return(text_a_nettoyer)
 
-clean_characters = [".",",","'","\n"]
-replacement =""
-cleaned_text= clean_text(text_string,clean_characters,replacement)
 
-print(cleaned_text)
+olist3 =["'",".","!",";","\n",","]
+repla = "123"
+iop = wash_string(text_string,olist3,repla)
+print(iop)
